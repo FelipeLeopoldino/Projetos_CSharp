@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Authentication;
 using System.Threading.Tasks;
+using ControleFacil.Api.Contract.NaturezaDeLancamento;
 using ControleFacil.Api.Contract.Usuario;
+using ControleFacil.Api.Domain.Services.Classes;
 using ControleFacil.Api.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,42 +13,26 @@ using Microsoft.AspNetCore.Mvc;
 namespace ControleFacil.Api.Controllers
 {
     [ApiController]
-    [Route("usuarios")]
-    public class UsuarioController : BaseController
+    [Route("naturezasDeLancamento")]
+    public class NaturezaDeLancamentoController : BaseController
     {
-        private readonly IUsuarioService _usuarioService;
+        private readonly IService<NaturezaDeLancamentoRequestContract, NaturezaDeLancamentoResponseContract, long> _naturezaDeLancamentoService;
 
-        public UsuarioController(IUsuarioService usuarioService)
-        {
-            _usuarioService = usuarioService;
-        }
 
-        [HttpPost]
-        [Route("login")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Autenticar(UsuarioLoginRequestContract contrato)
+        public NaturezaDeLancamentoController(
+            IService<NaturezaDeLancamentoRequestContract, NaturezaDeLancamentoResponseContract, long> NaturezaDeLancamentoService)
         {
-            try
-            {
-                return Ok(await _usuarioService.Autenticar(contrato));
-            }
-            catch (AuthenticationException ex)
-            {
-                return Unauthorized(new { StatusCode = 401, message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return Problem(ex.Message);
-            }
+            _naturezaDeLancamentoService = NaturezaDeLancamentoService;
         }
 
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Adicionar(UsuarioRequestContract contrato)
+        public async Task<IActionResult> Adicionar(NaturezaDeLancamentoRequestContract contrato)
         {
             try
             {
-                return Created("", await _usuarioService.Adicionar(contrato, 0));
+                long idUsuario = ObterIdUsuarioLogado();
+                return Created("", await _naturezaDeLancamentoService.Adicionar(contrato, idUsuario));
             }
             catch (Exception ex)
             {
@@ -55,12 +41,13 @@ namespace ControleFacil.Api.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize]
         public async Task<IActionResult> Obter()
         {
             try
             {
-                return Ok(await _usuarioService.Obter(0));
+                long idUsuario = ObterIdUsuarioLogado();
+                return Ok(await _naturezaDeLancamentoService.Obter(idUsuario));
             }
             catch (Exception ex)
             {
@@ -76,7 +63,8 @@ namespace ControleFacil.Api.Controllers
         {
             try
             {
-                return Ok(await _usuarioService.Obter(id, 0));
+                long idUsuario = ObterIdUsuarioLogado();
+                return Ok(await _naturezaDeLancamentoService.Obter(id, idUsuario));
             }
             catch (Exception ex)
             {
@@ -88,11 +76,12 @@ namespace ControleFacil.Api.Controllers
         [HttpPut]
         [Route("{id}")]
         [Authorize]
-        public async Task<IActionResult> Atualizar(long id, UsuarioRequestContract contrato)
+        public async Task<IActionResult> Atualizar(long id, NaturezaDeLancamentoRequestContract contrato)
         {
             try
             {
-                return Ok(await _usuarioService.Atualizar(id, contrato, 0));
+                long idUsuario = ObterIdUsuarioLogado();
+                return Ok(await _naturezaDeLancamentoService.Atualizar(id, contrato, idUsuario));
             }
             catch (Exception ex)
             {
@@ -107,7 +96,8 @@ namespace ControleFacil.Api.Controllers
         {
             try
             {
-                await _usuarioService.Inativar(id, 0);
+                long idUsuario = ObterIdUsuarioLogado();
+                await _naturezaDeLancamentoService.Inativar(id, idUsuario);
                 return NoContent();
             }
             catch (Exception ex)

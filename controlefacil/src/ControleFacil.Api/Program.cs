@@ -1,7 +1,9 @@
 using System.Text;
 using AutoMapper;
 using ControleFacil.Api.AutoMapper;
+using ControleFacil.Api.Contract.NaturezaDeLancamento;
 using ControleFacil.Api.Data;
+using ControleFacil.Api.Domain.Models;
 using ControleFacil.Api.Domain.Repository.Classes;
 using ControleFacil.Api.Domain.Repository.Interfaces;
 using ControleFacil.Api.Domain.Services.Classes;
@@ -36,6 +38,7 @@ static void ConfigurarInjecaoDeDependencia(WebApplicationBuilder builder)
     var config = new MapperConfiguration(cfg =>
     {
         cfg.AddProfile<UsuarioProfile>();
+        cfg.AddProfile<NaturezaDeLancamentoProfile>();
     });
 
     IMapper mapper = config.CreateMapper();
@@ -46,8 +49,9 @@ static void ConfigurarInjecaoDeDependencia(WebApplicationBuilder builder)
     .AddSingleton(mapper)
     .AddScoped<TokenService>()
     .AddScoped<IUsuarioRepository, UsuarioRepositoy>()
-    .AddScoped<IUsuarioService, UsuarioService>();
-
+    .AddScoped<IUsuarioService, UsuarioService>()
+    .AddScoped<INaturezaDeLancamentoRepository, NaturezaDeLancamentoRepository>()
+    .AddScoped<IService<NaturezaDeLancamentoRequestContract, NaturezaDeLancamentoResponseContract, long>, NaturezaDeLancamentoService>();
 }
 
 // Configura o serviços da API.

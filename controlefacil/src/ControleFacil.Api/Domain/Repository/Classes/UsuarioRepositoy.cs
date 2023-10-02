@@ -29,9 +29,9 @@ namespace ControleFacil.Api.Domain.Repository.Classes
 
         public async Task<Usuario> Atualizar(Usuario entidade)
         {
-            Usuario entidadeBanco = await _context.Usuario
+            Usuario entidadeBanco = _context.Usuario
             .Where(u => u.Id == entidade.Id)
-            .FirstOrDefaultAsync();
+            .FirstOrDefault();
 
             _context.Entry(entidadeBanco).CurrentValues.SetValues(entidade);
             _context.Update<Usuario>(entidadeBanco);
@@ -48,13 +48,6 @@ namespace ControleFacil.Api.Domain.Repository.Classes
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Usuario> Obter(string email)
-        {
-            return await _context.Usuario.AsNoTracking()
-            .Where(u => u.Email == email)
-            .FirstOrDefaultAsync();
-        }
-
         public async Task<IEnumerable<Usuario>> Obter()
         {
             return await _context.Usuario.AsNoTracking()
@@ -68,5 +61,13 @@ namespace ControleFacil.Api.Domain.Repository.Classes
             .Where(u => u.Id == id)
             .FirstOrDefaultAsync();
         }
+
+        public async Task<Usuario> Obter(string email)
+        {
+            return await _context.Usuario.AsNoTracking()
+            .Where(u => u.Email == email)
+            .FirstOrDefaultAsync();
+        }
+
     }
 }
