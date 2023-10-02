@@ -1,7 +1,11 @@
 using System.Text;
+using AutoMapper;
+using ControleFacil.Api.AutoMapper;
 using ControleFacil.Api.Data;
 using ControleFacil.Api.Domain.Repository.Classes;
 using ControleFacil.Api.Domain.Repository.Interfaces;
+using ControleFacil.Api.Domain.Services.Classes;
+using ControleFacil.Api.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -29,10 +33,21 @@ static void ConfigurarInjecaoDeDependencia(WebApplicationBuilder builder)
         Options.UseNpgsql(connectionString), ServiceLifetime.Transient, ServiceLifetime.Transient
     );
 
+    var config = new MapperConfiguration(cfg =>
+    {
+        cfg.AddProfile<UsuarioProfile>();
+    });
+
+    IMapper mapper = config.CreateMapper();
+
     builder.Services
     .AddSingleton(builder.Configuration)
     .AddSingleton(builder.Environment)
-    .AddScoped<IUsuarioRepository, UsuarioRepositoy>();
+    .AddSingleton(mapper)
+    .AddScoped<TokenService>()
+    .AddScoped<IUsuarioRepository, UsuarioRepositoy>()
+    .AddScoped<IUsuarioService, UsuarioService>();
+
 }
 
 // Configura o serviços da API.
