@@ -8,20 +8,23 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ControleFacil.Api.Data.Mappings
 {
-    public class UsuarioMap : IEntityTypeConfiguration<Usuario>
+    public class NaturezaDeLancamentoMap : IEntityTypeConfiguration<NaturezaDeLancamento>
     {
-        public void Configure(EntityTypeBuilder<Usuario> builder)
+        public void Configure(EntityTypeBuilder<NaturezaDeLancamento> builder)
         {
-            builder.ToTable("usuario")
+            builder.ToTable("naturezaDeLancamento")
             .HasKey(p => p.Id);
 
-            builder.Property(p => p.Email)
+            builder.HasOne(p => p.Usuario)
+            .WithMany()
+            .HasForeignKey(fk => fk.IdUsuario);
+
+            builder.Property(p => p.Descricao)
             .HasColumnType("VARCHAR")
             .IsRequired();
 
-            builder.Property(p => p.Senha)
-            .HasColumnType("VARCHAR")
-            .IsRequired();
+            builder.Property(p => p.Observacao)
+            .HasColumnType("VARCHAR");
 
             builder.Property(p => p.DataCadastro)
             .HasColumnType("timestamp")
