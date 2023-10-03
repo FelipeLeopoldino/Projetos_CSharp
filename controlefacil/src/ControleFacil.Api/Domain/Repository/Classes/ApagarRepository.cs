@@ -5,64 +5,64 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ControleFacil.Api.Domain.Repository.Classes
 {
-    public class NaturezaDeLancamentoRepository : INaturezaDeLancamentoRepository
+    public class ApagarRepository : IApagarRepository
     {
 
         private readonly ApplicationContext _context;
 
-        public NaturezaDeLancamentoRepository(ApplicationContext context)
+        public ApagarRepository(ApplicationContext context)
         {
             _context = context;
         }
 
-        public async Task<NaturezaDeLancamento> Adicionar(NaturezaDeLancamento entidade)
+        public async Task<Apagar> Adicionar(Apagar entidade)
         {
-            await _context.NaturezaDeLancamentos.AddAsync(entidade);
+            await _context.Apagar.AddAsync(entidade);
             await _context.SaveChangesAsync();
 
             return entidade;
         }
 
-        public async Task<NaturezaDeLancamento> Atualizar(NaturezaDeLancamento entidade)
+        public async Task<Apagar> Atualizar(Apagar entidade)
         {
-            NaturezaDeLancamento entidadeBanco = _context.NaturezaDeLancamentos
+            Apagar entidadeBanco = _context.Apagar
             .Where(n => n.Id == entidade.Id)
             .FirstOrDefault();
 
             _context.Entry(entidadeBanco).CurrentValues.SetValues(entidade);
-            _context.Update<NaturezaDeLancamento>(entidadeBanco);
+            _context.Update<Apagar>(entidadeBanco);
 
             await _context.SaveChangesAsync();
 
             return entidadeBanco;
         }
 
-        public async Task Deletar(NaturezaDeLancamento entidade)
+        public async Task Deletar(Apagar entidade)
         {
             //Deletar logico, só altero a data de inativação
             entidade.DataInativacao = DateTime.Now;
             await Atualizar(entidade);
         }
 
-        public async Task<IEnumerable<NaturezaDeLancamento>> Obter()
+        public async Task<IEnumerable<Apagar>> Obter()
         {
-            return await _context.NaturezaDeLancamentos
+            return await _context.Apagar
             .AsNoTracking()
             .OrderBy(n => n.Id)
             .ToListAsync();
         }
 
-        public async Task<NaturezaDeLancamento> Obter(long id)
+        public async Task<Apagar> Obter(long id)
         {
-            return await _context.NaturezaDeLancamentos
+            return await _context.Apagar
             .AsNoTracking()
             .Where(n => n.Id == id)
             .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<NaturezaDeLancamento>> ObterPeloIdUsuario(long idUsuario)
+        public async Task<IEnumerable<Apagar>> ObterPeloIdUsuario(long idUsuario)
         {
-            return await _context.NaturezaDeLancamentos
+            return await _context.Apagar
             .AsNoTracking()
             .Where(n => n.IdUsuario == idUsuario)
             .OrderBy(n => n.Id)

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj": {}
+    "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj": {}
   },
   "projects": {
     "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\src\\ControleFacil.Api\\ControleFacil.Api.csproj": {
@@ -112,14 +112,14 @@
         }
       }
     },
-    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj": {
+    "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
+        "projectUniqueName": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
         "projectName": "ControleFacil.Test",
-        "projectPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
+        "projectPath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
         "packagesPath": "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\",
-        "outputPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\obj\\",
+        "outputPath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

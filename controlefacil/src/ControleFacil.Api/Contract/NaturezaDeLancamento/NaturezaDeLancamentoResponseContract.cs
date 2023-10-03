@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ControleFacil.Api.Contract.NaturezaDeLancamento
+namespace ControleFacil.Api.Contract.Apagar
 {
-    public class NaturezaDeLancamentoResponseContract : NaturezaDeLancamentoRequestContract
+    public class ApagarResponseContract : ApagarRequestContract
     {
         public long Id { get; set; }
         public long IdUsuario { get; set; }
