@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Authentication;
-using System.Threading.Tasks;
 using ControleFacil.Api.Contract.NaturezaDeLancamento;
-using ControleFacil.Api.Contract.Usuario;
-using ControleFacil.Api.Domain.Services.Classes;
 using ControleFacil.Api.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

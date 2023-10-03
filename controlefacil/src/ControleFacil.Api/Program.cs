@@ -4,14 +4,12 @@ using ControleFacil.Api.AutoMapper;
 using ControleFacil.Api.Contract.Apagar;
 using ControleFacil.Api.Contract.NaturezaDeLancamento;
 using ControleFacil.Api.Data;
-using ControleFacil.Api.Domain.Models;
 using ControleFacil.Api.Domain.Repository.Classes;
 using ControleFacil.Api.Domain.Repository.Interfaces;
 using ControleFacil.Api.Domain.Services.Classes;
 using ControleFacil.Api.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 

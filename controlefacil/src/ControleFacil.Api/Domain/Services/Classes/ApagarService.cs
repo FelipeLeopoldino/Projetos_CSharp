@@ -1,4 +1,3 @@
-
 using AutoMapper;
 using ControleFacil.Api.Contract.Apagar;
 using ControleFacil.Api.Domain.Models;

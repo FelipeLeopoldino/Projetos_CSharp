@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using ControleFacil.Api.Contract.NaturezaDeLancamento;
 using ControleFacil.Api.Domain.Models;
 using ControleFacil.Api.Domain.Repository.Interfaces;
 using ControleFacil.Api.Domain.Services.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace ControleFacil.Api.Domain.Services.Classes
 {

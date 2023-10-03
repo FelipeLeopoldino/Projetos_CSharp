@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace ControleFacil.Api.Domain.Repository.Interfaces
 {
     public interface IRepository<T, I> where T : class
