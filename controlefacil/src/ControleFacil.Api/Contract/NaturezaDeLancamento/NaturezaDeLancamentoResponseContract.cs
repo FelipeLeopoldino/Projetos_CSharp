@@ -1,6 +1,6 @@
-namespace ControleFacil.Api.Contract.Apagar
+namespace ControleFacil.Api.Contract.NaturezaDeLancamento
 {
-    public class ApagarResponseContract : ApagarRequestContract
+    public class NaturezaDeLancamentoResponseContract : NaturezaDeLancamentoRequestContract
     {
         public long Id { get; set; }
         public long IdUsuario { get; set; }

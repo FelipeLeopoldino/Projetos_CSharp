@@ -1,12 +1,14 @@
+using ControleFacil.Api.Contract;
 using ControleFacil.Api.Contract.Apagar;
 using ControleFacil.Api.Domain.Services.Interfaces;
+using ControleFacil.Api.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleFacil.Api.Controllers
 {
     [ApiController]
-    [Route("Titulos-apagar")]
+    [Route("titulos-apagar")]
     public class ApagarController : BaseController
     {
         private readonly IService<ApagarRequestContract, ApagarResponseContract, long> _apagarService;
@@ -27,6 +29,14 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Created("", await _apagarService.Adicionar(contrato, idUsuario));
             }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
+            }
+            catch (BadRequestException ex)
+            {
+                return BadRequest(RetornarModelBadRequest(ex));
+            }
             catch (Exception ex)
             {
                 return Problem(ex.Message);
@@ -41,6 +51,10 @@ namespace ControleFacil.Api.Controllers
             {
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _apagarService.Obter(idUsuario));
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
             }
             catch (Exception ex)
             {
@@ -59,6 +73,10 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _apagarService.Obter(id, idUsuario));
             }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
+            }
             catch (Exception ex)
             {
 
@@ -76,6 +94,14 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _apagarService.Atualizar(id, contrato, idUsuario));
             }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
+            }
+            catch (BadRequestException ex)
+            {
+                return BadRequest(RetornarModelBadRequest(ex));
+            }
             catch (Exception ex)
             {
                 return Problem(ex.Message);
@@ -92,6 +118,10 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 await _apagarService.Inativar(id, idUsuario);
                 return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
             }
             catch (Exception ex)
             {

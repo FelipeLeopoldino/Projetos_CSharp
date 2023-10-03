@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bzrXqRI/TogQCCdgrXxagW/xJeNaqbwsiUEYCAv4twbMNaHfOCWZhT50F5YSptNzWdzW+uEiPr8Y2aQTEw60hA==",
+  "dgSpecHash": "aySEIsiYNgET9WjznMKiJmNwJEP3gdQlOKWex2S5A7W4Ohtyzsrdyp2RVjcudrb/qVcrfevQFx6TpQk5htznNQ==",
   "success": true,
-  "projectFilePath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
+  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\controlefacil\\test\\ControleFacil.Test\\ControleFacil.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

@@ -1,6 +1,6 @@
-namespace ControleFacil.Api.Contract.Apagar
+namespace ControleFacil.Api.Contract.Areceber
 {
-    public class ApagarResponseContract : ApagarRequestContract
+    public class AreceberResponseContract : AreceberRequestContract
     {
         public long Id { get; set; }
         public long IdUsuario { get; set; }

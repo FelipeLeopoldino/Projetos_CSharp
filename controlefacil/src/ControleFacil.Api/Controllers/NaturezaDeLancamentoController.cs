@@ -1,5 +1,6 @@
 using ControleFacil.Api.Contract.NaturezaDeLancamento;
 using ControleFacil.Api.Domain.Services.Interfaces;
+using ControleFacil.Api.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,6 +28,10 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Created("", await _naturezaDeLancamentoService.Adicionar(contrato, idUsuario));
             }
+            catch (BadRequestException ex)
+            {
+                return BadRequest(RetornarModelBadRequest(ex));
+            }
             catch (Exception ex)
             {
                 return Problem(ex.Message);
@@ -41,6 +46,10 @@ namespace ControleFacil.Api.Controllers
             {
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _naturezaDeLancamentoService.Obter(idUsuario));
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
             }
             catch (Exception ex)
             {
@@ -59,6 +68,10 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _naturezaDeLancamentoService.Obter(id, idUsuario));
             }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
+            }
             catch (Exception ex)
             {
 
@@ -76,6 +89,14 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 return Ok(await _naturezaDeLancamentoService.Atualizar(id, contrato, idUsuario));
             }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
+            }
+            catch (BadRequestException ex)
+            {
+                return BadRequest(RetornarModelBadRequest(ex));
+            }
             catch (Exception ex)
             {
                 return Problem(ex.Message);
@@ -92,6 +113,10 @@ namespace ControleFacil.Api.Controllers
                 long idUsuario = ObterIdUsuarioLogado();
                 await _naturezaDeLancamentoService.Inativar(id, idUsuario);
                 return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(RetornarModelNotFound(ex));
             }
             catch (Exception ex)
             {
