@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l7LIjmHi6qBU+eG1vX2Ac6bJmHttLAUQBquI9cDWb7hRZM53J3PtdFupEduC4CVp0JLN5Nv9Q7u3yQjZxme39Q==",
+  "dgSpecHash": "VXMswnzzK6yXY4zJznNqwwxrqGqqxt1rmQMUymuKF1yIqQrktRSSHsjydBwHGvM013nDDeDMpGmHHy6Wm7GKog==",
   "success": true,
-  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
+  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\closedxml\\0.102.1\\closedxml.0.102.1.nupkg.sha512",
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",

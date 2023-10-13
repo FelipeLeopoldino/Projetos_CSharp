@@ -1,0 +1,12 @@
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\bin\Debug\net6.0\academia.Domain.deps.json
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\bin\Debug\net6.0\academia.Domain.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\bin\Debug\net6.0\academia.Domain.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.AssemblyInfoInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.AssemblyInfo.cs
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.csproj.CoreCompileInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\refint\academia.Domain.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\ref\academia.Domain.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Domain\obj\Debug\net6.0\academia.Domain.csproj.AssemblyReference.cache

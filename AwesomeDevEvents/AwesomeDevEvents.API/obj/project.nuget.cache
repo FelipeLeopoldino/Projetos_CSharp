@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rbPaNm66mqhpmQMHJzLduxf/74jDKObxmu6zUN9B0QHGmbC98Lf7l3A9sJag/I2aPrMQ9Hcv7GZI3Q6MOHVuCQ==",
+  "dgSpecHash": "kFJraFiVuPlz6gYbsBkW5iFeSKHhBoNutxZfWUIskd0zMkKsxehFET1DJbxGaRsw5Rl+5eDbp4HZzFlMGwqCyQ==",
   "success": true,
-  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
+  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

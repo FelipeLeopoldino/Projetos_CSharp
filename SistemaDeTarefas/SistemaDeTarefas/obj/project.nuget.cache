@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NtoYB8feTcDQSYyNhLWjWcViA11gA+BEIULfh9eOP6IiM2kVejws1bsGJDdAh0GEOKc0fY/2BKx6rvHVjoi8oQ==",
+  "dgSpecHash": "9owlWD6rwjX78UOr8bRlYlHEZKZykAg89B1LcxGuykm3qlXYrLyLqnWJu05oMyfMxZsK9UlpszZyJ/JJCiBL4Q==",
   "success": true,
-  "projectFilePath": "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
+  "projectFilePath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",

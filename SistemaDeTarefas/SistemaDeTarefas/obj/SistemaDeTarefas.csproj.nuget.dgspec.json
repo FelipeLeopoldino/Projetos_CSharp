@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj": {}
+    "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj": {}
   },
   "projects": {
-    "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj": {
+    "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
+        "projectUniqueName": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
         "projectName": "SistemaDeTarefas",
-        "projectPath": "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
+        "projectPath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
         "packagesPath": "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\",
-        "outputPath": "C:\\FelipeLeopoldino\\projetos\\SistemaDeTarefas\\SistemaDeTarefas\\obj\\",
+        "outputPath": "c:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\SistemaDeTarefas\\SistemaDeTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj": {}
+    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj": {}
   },
   "projects": {
-    "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj": {
+    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
+        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
         "projectName": "AwesomeDevEvents.API",
-        "projectPath": "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
+        "projectPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\AwesomeDevEvents.API.csproj",
         "packagesPath": "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\",
-        "outputPath": "C:\\FelipeLeopoldino\\projetos\\AwesomeDevEvents\\AwesomeDevEvents.API\\obj\\",
+        "outputPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\AwesomeDevEvents\\AwesomeDevEvents.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

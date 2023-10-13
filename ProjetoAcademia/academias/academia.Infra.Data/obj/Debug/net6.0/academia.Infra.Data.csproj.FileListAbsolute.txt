@@ -1,0 +1,17 @@
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Infra.Data.deps.json
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Infra.Data.runtimeconfig.json
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Infra.Data.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Infra.Data.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.csproj.AssemblyReference.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.AssemblyInfoInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.AssemblyInfo.cs
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.csproj.CoreCompileInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\refint\academia.Infra.Data.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.genruntimeconfig.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\ref\academia.Infra.Data.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Domain.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\bin\Debug\net6.0\academia.Domain.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\academias\academia.Infra.Data\obj\Debug\net6.0\academia.Infra.Data.csproj.CopyComplete

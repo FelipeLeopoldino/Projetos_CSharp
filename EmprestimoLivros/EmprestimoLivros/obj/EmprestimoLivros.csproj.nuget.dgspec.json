@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {}
+    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {}
   },
   "projects": {
-    "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {
+    "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
+        "projectUniqueName": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
         "projectName": "EmprestimoLivros",
-        "projectPath": "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
+        "projectPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
         "packagesPath": "C:\\Users\\CarlosFelipeLeopoldi\\.nuget\\packages\\",
-        "outputPath": "C:\\FelipeLeopoldino\\projetos\\EmprestimoLivros\\EmprestimoLivros\\obj\\",
+        "outputPath": "C:\\FelipeLeopoldino\\projetos\\Projetos_CSharp\\EmprestimoLivros\\EmprestimoLivros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

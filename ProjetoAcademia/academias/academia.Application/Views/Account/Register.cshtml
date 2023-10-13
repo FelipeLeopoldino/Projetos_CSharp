@@ -1,0 +1,49 @@
+﻿@model academia.Application.Models.Account.UserViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutGeneral.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="~/img/cadastrar.jpg" style="width:100%" />
+        </div> 
+        <div class="col-sm-6">
+            <form class="row g-3" asp-controller="Account" asp-action="Register" method="POST">
+                <div class="col-md-6">
+                    <label for="primeiroNome" class="form-label">Primeiro nome</label>
+                    <input type="text" class="form-control" asp-for="FirstName" placeholder="Digite seu primeiro nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="ultimoNome" class="form-label">Último nome</label>
+                    <input type="text" class="form-control" asp-for="LastName" placeholder="Digite o seu último nome">
+                </div>
+                <div class="col-12">
+                    <label for="usuario" class="form-label">Usuário</label>
+                    <input type="text" class="form-control" placeholder="Digite um usuário" asp-for="UserName">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Digite seu e-mail" asp-for="Email">
+                </div>
+                <div class="col-md-6">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" asp-for="Password" placeholder="Digite sua senha">
+                </div>
+                <div class="col-md-6">
+                    <label for="confirmeSenha" class="form-label">Confirme sua senha</label>
+                    <input type="password" class="form-control" asp-for="ConfirmPassword" placeholder="Confirme sua senha">
+                </div>
+                <div class="col-12">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Criar conta</button>
+                    </div>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
