@@ -15,12 +15,12 @@
                         <i class="fa-solid fa-user-lock"></i> Login
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="@Url.Action("Login","Account")"> <i class="fa-solid fa-right-to-bracket"></i>Entrar</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Login","Account")"> <i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li><hr class="dropdown-divider"></li>
                             <form asp-controller="Account" asp-action="LogOut" method="post">
-                                <button class="dropdown-item" type="submit"><i class="fa-solid fa-door-open"></i>Sair</button>
+                                <button class="dropdown-item" type="submit"><i class="fa-solid fa-door-open"></i> Sair</button>
                             </form>
                         }
                     </ul>

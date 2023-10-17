@@ -86,7 +86,6 @@ namespace academia.Application.Controllers.Account
             return View();
         }
 
-
         public IActionResult Login()
         {
             return View();
@@ -141,6 +140,72 @@ namespace academia.Application.Controllers.Account
         }
 
         [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+
+                    if (user != null)
+                    {
+                        var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                        var resetUrl = Url.Action("ResetPassword", "Account", new { Token = token, email = model.Email }, Request.Scheme);
+
+                        //System.IO.File.WriteAllText("resetLinkToNewPass", resetUrl);
+                        TempData["ResetSenha"] = resetUrl;
+                        return RedirectToAction(nameof(ConfirmPasswordSucess));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return View();
+        }
+
+        public IActionResult ResetPassword(string token, string email)
+        {
+            return View(new ResetPasswordViewModel { Token = token, Email = email });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+
+                    if (user != null)
+                    {
+                        var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+                        if (!result.Succeeded)
+                        {
+                            foreach (var error in result.Errors)
+                            {
+                                ModelState.AddModelError("", error.Description);
+                            }
+
+                            return View();
+                        }
+
+                        return View("Success");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> LogOut()
         {
             await _signInManager.SignOutAsync();
@@ -148,7 +213,17 @@ namespace academia.Application.Controllers.Account
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult ConfirmPasswordSucess()
+        {
+            return View();
+        }
+
         public IActionResult BemVindo()
+        {
+            return View();
+        }
+
+        public IActionResult Success()
         {
             return View();
         }

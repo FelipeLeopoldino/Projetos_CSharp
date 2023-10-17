@@ -20,12 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCZW1WaW5kby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/ConfirmPasswordSucess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtUGFzc3dvcmRTdWNlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Account/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/FelipeLeopoldino/projetos/Projetos_CSharp/ProjetoAcademia/academias/academia.Application/Views/Home/Index.cshtml]
