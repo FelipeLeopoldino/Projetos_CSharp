@@ -1,4 +1,6 @@
-﻿using academia.Application.Models.Account;
+﻿using academia.Application.Models;
+using academia.Application.Models.Account;
+using academia.Application.Services;
 using academia.Domain.Entities.Account;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
@@ -153,7 +155,17 @@ namespace academia.Application.Controllers.Account
                         var token = await _userManager.GeneratePasswordResetTokenAsync(user);
                         var resetUrl = Url.Action("ResetPassword", "Account", new { Token = token, email = model.Email }, Request.Scheme);
 
-                        //System.IO.File.WriteAllText("resetLinkToNewPass", resetUrl);
+                        var mail = new EmailServices();
+
+                        var msg = new EntidadeEmailAddressModelView()
+                        {
+                            Subject = "E-mail enviado para alteração de senha",
+                            To = model.Email,
+                            Body = resetUrl
+                        };
+
+                        await mail.SendEmailAsync(msg);
+                        TempData["MsgEmailSucesso"] = "Email enviado com sucesso.";
                         TempData["ResetSenha"] = resetUrl;
                         return RedirectToAction(nameof(ConfirmPasswordSucess));
                     }
