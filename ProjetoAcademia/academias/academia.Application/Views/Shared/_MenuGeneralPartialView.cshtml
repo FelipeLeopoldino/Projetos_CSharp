@@ -7,23 +7,38 @@
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item ">
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span class="m-lg-2 text-light">
+                            Olá, @User.Identity.Name
+                        </span>
+                    }
+
                     <a class="btn btn-outline-warning" asp-area="" asp-controller="Account" asp-action="Register"><i class="fa-solid fa-user-plus"></i> Criar Conta</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-user-lock"></i> Login
                     </a>
+                    
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="@Url.Action("Login","Account")"> <i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
+
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li><a class="dropdown-item" href="@Url.Action("Login","Account")"> <i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
+                        }
+
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li><hr class="dropdown-divider"></li>
                             <form asp-controller="Account" asp-action="LogOut" method="post">
                                 <button class="dropdown-item" type="submit"><i class="fa-solid fa-door-open"></i> Sair</button>
                             </form>
                         }
                     </ul>
+               
+                   
                 </li>
             </ul>
         </div>

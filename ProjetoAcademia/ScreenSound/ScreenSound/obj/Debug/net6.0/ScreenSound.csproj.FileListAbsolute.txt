@@ -1,0 +1,14 @@
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\bin\Debug\net6.0\ScreenSound.exe
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\bin\Debug\net6.0\ScreenSound.deps.json
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\bin\Debug\net6.0\ScreenSound.runtimeconfig.json
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\bin\Debug\net6.0\ScreenSound.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\bin\Debug\net6.0\ScreenSound.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.GeneratedMSBuildEditorConfig.editorconfig
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.AssemblyInfoInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.AssemblyInfo.cs
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.csproj.CoreCompileInputs.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\refint\ScreenSound.dll
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.pdb
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ScreenSound.genruntimeconfig.cache
+C:\FelipeLeopoldino\projetos\Projetos_CSharp\ProjetoAcademia\ScreenSound\ScreenSound\obj\Debug\net6.0\ref\ScreenSound.dll

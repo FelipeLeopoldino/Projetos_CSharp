@@ -1,12 +1,26 @@
-﻿@using academia.Domain.Entities.Account;
+﻿@using academia.Domain.Entities.Account
 
 @{
     ViewData["Title"] = "BemVindo";
     Layout = "~/Views/Shared/_LayoutGeneral.cshtml";
 }
 
-<div class="container">
-    <br/>
-    <h1>Seja bem vindo, @User.Identity.Name !</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 ">
+            <p class="text-center">Menu lateral</p>
+            <hr/>
+            <div class="d-grid gap-3">
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-user-plus"></i> Alunos</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-user-pen"></i> Professores</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-dumbbell"></i> Equipamentos</button>
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-sack-dollar"></i> Financeiro</button>
+            </div>
+         
+        </div>
+        <div class="col-sm-9">
+            <p class="text-center">Conteudo</p>
+        </div>
+    </div>
 </div>
 
